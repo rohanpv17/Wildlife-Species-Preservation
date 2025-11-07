@@ -47,37 +47,41 @@ git clone https://github.com/rohanpv17/Wildlife-Species-Preservation.git
 cd Wildlife-Species-Preservation
 ```
 
-2. Install Python Dependencies  
-   Make sure you have Python 3.8+ installed. Then, install the required libraries:
-   ```bash
-   pip install streamlit mysql-connector-python pandas geopy
-   ```
-4. **Set Up the MySQL Database**  
+### 2. Install Python Dependencies  
+Make sure you have Python 3.8+ installed. Then, install the required libraries:
+```bash
+pip install streamlit mysql-connector-python pandas geopy
+```
+### 3. **Set Up the MySQL Database**  
    * Ensure you have a local MySQL server running (e.g., via MySQL Workbench).  
    * Run the complete SQL script (the one we finalized with ALTER TABLE, UPDATE, and all CREATE PROCEDURE/FUNCTION/TRIGGER commands) to create the wild\_db database, all tables, and all SQL logic.  
-5. **Update Database Credentials**  
+### 4. **Update Database Credentials**  
    * In app.py, find the init\_connection function.  
    * Update the password field to match your local MySQL root password.
-
+```bash
 connection \= mysql.connector.connect(  
     host="localhost",  
     user="root",  
     password="YOUR\_PASSWORD\_HERE",  \# \<--- UPDATE THIS  
     database="wild\_db"  
 )
-
+```
 ## **🏃‍♂️ How to Run the Application**
 
 1. Open your terminal.  
-2. Navigate to the project folder.  
+2. Navigate to the project folder.
+   ```bash
    cd path/to/Wildlife-Species-Preservation
+   ```
 
-3. Run the Streamlit app.  
+3. Run the Streamlit app.
+   ```bash 
    streamlit run app.py
+   ```
 
 4. Your browser will automatically open to the dashboard.
 
 ## **👤 Authors**
 
 * **Rohan P Varghese** ([@rohanpv17](https://www.google.com/search?q=https://github.com/rohanpv17))  
-* *(Add your teammates here)*
+* **Yuvakumar S.P.** ([@yuvakumar1234](https://www.google.com/search?q=https://github.com/yuvakumar1234))  
