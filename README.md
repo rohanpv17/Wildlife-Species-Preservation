@@ -41,18 +41,21 @@ The system manages complex relationships between species, preserves, environment
 
 ## **🛠️ Setup and Installation**
 
-1. **Clone the Repository**  
-   git clone \[https://github.com/rohanpv17/Wildlife-Species-Preservation.git\](https://github.com/rohanpv17/Wildlife-Species-Preservation.git)  
-   cd Wildlife-Species-Preservation
+### 1. Clone the Repository
+```bash
+git clone https://github.com/rohanpv17/Wildlife-Species-Preservation.git
+cd Wildlife-Species-Preservation
+```
 
 2. Install Python Dependencies  
-   Make sure you have Python 3.8+ installed. Then, install the required libraries:  
+   Make sure you have Python 3.8+ installed. Then, install the required libraries:
+   ```bash
    pip install streamlit mysql-connector-python pandas geopy
-
-3. **Set Up the MySQL Database**  
+   ```
+4. **Set Up the MySQL Database**  
    * Ensure you have a local MySQL server running (e.g., via MySQL Workbench).  
    * Run the complete SQL script (the one we finalized with ALTER TABLE, UPDATE, and all CREATE PROCEDURE/FUNCTION/TRIGGER commands) to create the wild\_db database, all tables, and all SQL logic.  
-4. **Update Database Credentials**  
+5. **Update Database Credentials**  
    * In app.py, find the init\_connection function.  
    * Update the password field to match your local MySQL root password.
 
